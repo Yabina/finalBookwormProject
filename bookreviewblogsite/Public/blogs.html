@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<div lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css" /> <!-- Link to CSS file -->
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/flexbox.css" />
+        <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous" />
+         <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+            <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+        <style>
+                
+ 
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
+        <title>Book Review Website</title>
+
+    </head>
+    <div class="main wrapper">
+        <header>
+            <h1>Welcome to our Book Review Website</h1>
+        </header>
+    </div>
+    <div class="Top Nav">
+        <nav>
+            <ul>
+                <li style="font-weight: bolder;"><a href="./index.html">Home</a></li>
+                <li style="font-weight: bolder;"><a href="./books.html">Books</a></li>
+                <li style="font-weight: bolder;"><a href="./about.html">About Us</a></li>
+                <li style="font-weight: bolder;"><a href="./login.html">Sign In</a></li>
+                <li style="font-weight: bolder;"><a id="logout" href="#" onclick="doLogout(event)">Sign Out</a></li>
+                <li style="font-weight: bolder;"><a class="login-sign" href="http://localhost:4000/register.html">Sign Up</a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <body>
+        <main>
+            <section class="book-review">
+                <h1 style="font-weight: bolder; text-align: center; font-size: 100px; font-family: cursive; color:rgb(85, 51, 51)">Blogs</h1>
+                <br>
+                <!-- <div id="all-reviews-container" class = "container1"></div>
+                <div id="yourReviews"></div>
+
+                <div id="submitted-review"></div> --></section>
+<br><div class="container" >
+    <div class="row">
+      <div class="col-md-16 mx-auto" style="color:rgb(85, 51, 51);border-style: double;">
+        <!-- Card or container for each paragraph -->
+        <div class="paragraph-card">
+          <div class="card">
+            <div class="card-body" style="background-color: rgb(240, 205, 205); border-style: double;">
+                <h3>Book Title: Self Awareness </h3>
+                <h5>Author: McCormack spawn</h5>
+              <p class="card-text">Facilisi etiam dignissim diam quis. Ut tristique et egestas quis. Amet purus gravida quis blandit turpis cursus. Viverra aliquet eget sit amet tellus. Euismod lacinia at quis risus sed vulputate odio ut enim. Arcu odio ut sem nulla. Pellentesque dignissim enim sit amet venenatis urna cursus. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Enim lobortis scelerisque fermentum dui faucibus. Sed risus ultricies tristique nulla aliquet enim tortor at. Nulla facilisi morbi tempus iaculis urna id. Maecenas sed enim ut sem viverra aliquet eget. Scelerisque eleifend donec pretium vulputate. Et odio pellentesque diam volutpat commodo. Mauris ultrices eros in cursus turpis massa tincidunt. Nulla pellentesque dignissim enim sit amet venenatis.</p>
+              <h5>Rating: 4</h5>
+              <h5>Reviewed By: Philip Kent</h5>
+              <h5>Reviewed On: 1/20/2024</h5>
+            </div>
+          </div>
+        </div>
+        
+        <div class="paragraph-card">
+          <div class="card">
+            <div class="card-body">
+                <h3>Book Title: Self Awareness </h3>
+                <h5>Author: McCormack spawn</h5>
+              <p class="card-text">Facilisi etiam dignissim diam quis. Ut tristique et egestas quis. Amet purus gravida quis blandit turpis cursus. Viverra aliquet eget sit amet tellus. Euismod lacinia at quis risus sed vulputate odio ut enim. Arcu odio ut sem nulla. Pellentesque dignissim enim sit amet venenatis urna cursus. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Enim lobortis scelerisque fermentum dui faucibus. Sed risus ultricies tristique nulla aliquet enim tortor at. Nulla facilisi morbi tempus iaculis urna id. Maecenas sed enim ut sem viverra aliquet eget. Scelerisque eleifend donec pretium vulputate. Et odio pellentesque diam volutpat commodo. Mauris ultrices eros in cursus turpis massa tincidunt. Nulla pellentesque dignissim enim sit amet venenatis.</p>
+              <h5>Rating: 4</h5>
+              <h5>Reviewed By: Philip Kent</h5>
+              <h5>Reviewed On: 1/20/2024</h5>
+            </div>
+          </div>
+        </div>
+        
+        <div class="paragraph-card">
+          <div class="card">
+            <div class="card-body"style="background-color: rgb(240, 205, 205); border-style: double;">
+                <h3>Book Title: Self Awareness </h3>
+                <h5>Author: McCormack spawn</h5>
+              <p class="card-text"> Vitae suscipit tellus mauris a diam. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Tellus id interdum velit laoreet id donec ultrices tincidunt. Tincidunt dui ut ornare lectus sit amet est placerat. Mauris in aliquam sem fringilla ut morbi tincidunt. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Nec sagittis aliquam malesuada bibendum arcu vitae. Integer quis auctor elit sed vulputate mi sit. Diam sollicitudin tempor id eu nisl. Ornare quam viverra orci sagittis eu volutpat odio facilisis.
+
+             Integer vitae justo eget magna fermentum. Ut lectus arcu bibendum at varius vel pharetra vel. Eget egestas purus viverra accumsan in nisl nisi scelerisque. Tempus iaculis urna id volutpat lacus laoreet. Quis lectus nulla at volutpat diam ut venenatis tellus in. Faucibus interdum posuere lorem ipsum dolor sit amet consectetur adipiscing. Suscipit adipiscing bibendum est ultricies. Diam donec adipiscing tristique risus nec feugiat in. Integer enim neque volutpat ac tincidunt. Tellus molestie nunc non blandit massa enim nec dui. Aliquet porttitor lacus luctus accumsan tortor posuere. Nullam vehicula ipsum a arcu cursus vitae congue mauris. Tempor orci dapibus ultrices in.</p>
+              <h5>Rating: 4</h5>
+              <h5>Reviewed By: Philip Kent</h5>
+              <h5>Reviewed On: 1/20/2024</h5>
+            </div>
+          </div>
+        </div>
+        
+        <div class="paragraph-card">
+          <div class="card">
+            <div class="card-body">
+                <h3>Book Title: Self Awareness </h3>
+                <h5>Author: McCormack spawn</h5>
+              <p class="card-text">Facilisi etiam dignissim diam quis. Ut tristique et egestas quis. Amet purus gravida quis blandit turpis cursus. Viverra aliquet eget sit amet tellus. Euismod lacinia at quis risus sed vulputate odio ut enim. Arcu odio ut sem nulla. Pellentesque dignissim enim sit amet venenatis urna cursus. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Enim lobortis scelerisque fermentum dui faucibus. Sed risus ultricies tristique nulla aliquet enim tortor at. Nulla facilisi morbi tempus iaculis urna id. Maecenas sed enim ut sem viverra aliquet eget. Scelerisque eleifend donec pretium vulputate. Et odio pellentesque diam volutpat commodo. Mauris ultrices eros in cursus turpis massa tincidunt. Nulla pellentesque dignissim enim sit amet venenatis.</p>
+              <h5>Rating: 4</h5>
+              <h5>Reviewed By: Philip Kent</h5>
+              <h5>Reviewed On: 1/20/2024</h5>
+            </div>
+          </div>
+        </div>
+        <div class="paragraph-card">
+            <div class="card">
+              <div class="card-body"style="background-color: rgb(240, 205, 205); border-style: double;">
+                  <h3>Book Title: Self Awareness </h3>
+                  <h5>Author: McCormack spawn</h5>
+                <p class="card-text">Facilisi etiam dignissim diam quis. Ut tristique et egestas quis. Amet purus gravida quis blandit turpis cursus. Viverra aliquet eget sit amet tellus. Euismod lacinia at quis risus sed vulputate odio ut enim. Arcu odio ut sem nulla. Pellentesque dignissim enim sit amet venenatis urna cursus. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Enim lobortis scelerisque fermentum dui faucibus. Sed risus ultricies tristique nulla aliquet enim tortor at. Nulla facilisi morbi tempus iaculis urna id. Maecenas sed enim ut sem viverra aliquet eget. Scelerisque eleifend donec pretium vulputate. Et odio pellentesque diam volutpat commodo. Mauris ultrices eros in cursus turpis massa tincidunt. Nulla pellentesque dignissim enim sit amet venenatis.</p>
+                <h5>Rating: 4</h5>
+                <h5>Reviewed By: Philip Kent</h5>
+                <h5>Reviewed On: 1/20/2024</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="paragraph-card">
+            <div class="card">
+              <div class="card-body">
+                  <h3>Book Title: Self Awareness </h3>
+                  <h5>Author: McCormack spawn</h5>
+                <p class="card-text">Vel turpis nunc eget lorem dolor sed viverra ipsum. Eget gravida cum sociis natoque penatibus et magnis dis parturient. Consectetur libero id faucibus nisl tincidunt eget. Sagittis vitae et leo duis ut diam. Sagittis id consectetur purus ut faucibus pulvinar elementum. Donec ultrices tincidunt arcu non sodales neque sodales ut etiam. Vel turpis nunc eget lorem dolor sed viverra ipsum. Sapien faucibus et molestie ac feugiat. At ultrices mi tempus imperdiet nulla malesuada. Lectus proin nibh nisl condimentum id venenatis a. Mattis ullamcorper velit sed ullamcorper morbi. Tincidunt augue interdum velit euismod. Ut consequat semper viverra nam libero. Dignissim suspendisse in est ante in. Quis commodo odio aenean sed adipiscing. Amet cursus sit amet dictum sit. Id cursus metus aliquam eleifend mi in nulla posuere. Ut sem viverra aliquet eget sit amet. Volutpat lacus laoreet non curabitur gravida arcu ac tortor dignissim. Tincidunt lobortis feugiat vivamus at augue eget arcu dictum varius.
+
+               Odio morbi quis commodo odio aenean sed. Scelerisque varius morbi enim nunc faucibus a pellentesque sit. Laoreet suspendisse interdum consectetur libero id faucibus nisl tincidunt. Justo eget magna fermentum iaculis eu. Vestibulum rhoncus est pellentesque elit ullamcorper dignissim cras. Sit amet luctus venenatis lectus magna fringilla urna porttitor rhoncus. Sit amet dictum sit amet justo donec enim. Vitae suscipit tellus mauris a diam. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Porttitor rhoncus dolor purus non enim praesent elementum facilisis. Tellus id interdum velit laoreet id donec ultrices tincidunt. Tincidunt dui ut ornare lectus sit amet est placerat. Mauris in aliquam sem fringilla ut morbi tincidunt. Dapibus ultrices in iaculis nunc sed augue lacus viverra vitae. Nec sagittis aliquam malesuada bibendum arcu vitae. Integer quis auctor elit sed vulputate mi sit. Diam sollicitudin tempor id eu nisl. Ornare quam viverra orci sagittis eu volutpat odio facilisis.</p>
+                <h5>Rating: 4</h5>
+                <h5>Reviewed By: Philip Kent</h5>
+                <h5>Reviewed On: 1/20/2024</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="paragraph-card">
+            <div class="card">
+              <div class="card-body"style="background-color: rgb(240, 205, 205); border-style: double;">
+                  <h3>Book Title: The Panic </h3>
+                  <h5>Author: Patrick Diaz</h5>
+                <p class="card-text">Facilisi etiam dignissim diam quis. Ut tristique et egestas quis. Amet purus gravida quis blandit turpis cursus. Viverra aliquet eget sit amet tellus. Euismod lacinia at quis risus sed vulputate odio ut enim. Arcu odio ut sem nulla. Pellentesque dignissim enim sit amet venenatis urna cursus. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Enim lobortis scelerisque fermentum dui faucibus. Sed risus ultricies tristique nulla aliquet enim tortor at. Nulla facilisi morbi tempus iaculis urna id. Maecenas sed enim ut sem viverra aliquet eget. Scelerisque eleifend donec pretium vulputate. Et odio pellentesque diam volutpat commodo. Mauris ultrices eros in cursus turpis massa tincidunt. Nulla pellentesque dignissim enim sit amet venenatis.</p>
+                <h5>Rating: 4</h5>
+                <h5>Reviewed By: Yab </h5>
+                <h5>Reviewed On: 1/20/2024</h5>
+              </div>
+            </div>
+          </div>
+
+          <div class="paragraph-card">
+            <div class="card">
+              <div class="card-body">
+                  <h3>Book Title: Discipline </h3>
+                  <h5>Author: Sanchez Rodriguez</h5>
+                <p class="card-text">Facilisi etiam dignissim diam quis. Ut tristique et egestas quis. Amet purus gravida quis blandit turpis cursus. Viverra aliquet eget sit amet tellus. Euismod lacinia at quis risus sed vulputate odio ut enim. Arcu odio ut sem nulla. Pellentesque dignissim enim sit amet venenatis urna cursus. Ullamcorper morbi tincidunt ornare massa eget egestas purus viverra. Enim lobortis scelerisque fermentum dui faucibus. Sed risus ultricies tristique nulla aliquet enim tortor at. Nulla facilisi morbi tempus iaculis urna id. Maecenas sed enim ut sem viverra aliquet eget. Scelerisque eleifend donec pretium vulputate. Et odio pellentesque diam volutpat commodo. Mauris ultrices eros in cursus turpis massa tincidunt. Nulla pellentesque dignissim enim sit amet venenatis.</p>
+                <h5>Rating: 4</h5>
+                <h5>Reviewed By: Nick Santos</h5>
+                <h5>Reviewed On: 12/20/2023</h5>
+              </div>
+            </div>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+        </main>
+
+        <footer class="reviewfooter">
+            <div class="author">
+                <p>Author: <a href="https://github.com/Yabina/"> Yeabsira Desta</a></p>
+            </div>
+        </footer>
+<!-- 
+        <script src="../lib/api.config.js"></script>
+        <script src="../lib/simple-storage.js"></script>
+        <script src="../lib/service-helpers.js"></script>
+        <script src="../lib/auth.serice.js"></script>
+        <script src="../lib/auth.js"></script>
+        <script src="../lib/auth.guard.js"></script>
+        <script src="./reviews-api.service.js"></script>
+        <script src="./review.service.js"></script>
+        <script src="./review.js"></script>
+        <script src="../app.js"></script>
+
+<script>
+    // Function to fetch all reviews from the API endpoint
+
+
+    const BASE_API_URL = 'http://localhost:3000/api';
+const GET_ALL_REVIEWS_API = `${BASE_API_URL}/reviews/getAllReview`;
+
+class ReviewsService {
+  async getBlogReview() {
+    try {
+      const response = await fetch(GET_ALL_REVIEWS_API);
+      if (!response.ok) {
+        throw new Error('Failed to fetch reviews');
+      }
+      const data = await response.json();
+      return data;
+    } catch (error) {
+      console.error('Error fetching reviews:', error);
+      return [];
+    }
+  }
+}
+
+const reviewsService = new ReviewsService();
+
+// Function to display reviews as paragraphs on the page
+const displayReviews = async () => {
+  const reviewsContainer = document.getElementById('all-reviews-container');
+  const reviews = await reviewsService.getBlogReview();
+
+  // Clear previous content
+  reviewsContainer.innerHTML = '';
+
+  // Check if there are any reviews
+  if (reviews.length === 0) {
+    const noReviewsMessage = document.createElement('p');
+    noReviewsMessage.textContent = 'No reviews available.';
+    reviewsContainer.appendChild(noReviewsMessage);
+    return;
+  }
+
+  // Loop through the reviews and create paragraphs for each review
+  reviews.forEach(review => {
+    const reviewParagraph = document.createElement('p');
+    reviewParagraph.textContent = `Book Title: ${review.book_title}, Author Name: ${review.author_name}, Rating: ${review.rating}, Description: ${review.description}, Reviewed By: ${review.reviewed_by}, Review Date: ${new Date(review.created_date).toLocaleDateString()}`;
+    reviewsContainer.appendChild(reviewParagraph);
+  });
+};
+
+// Call the function to display reviews when the page loads
+window.onload = displayReviews;
+</script> -->
+    </body>
+
+    </html>

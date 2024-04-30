@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/books.css"/>
+    <link rel="stylesheet" href="./css/styles.css"/> <!-- Link to CSS file -->
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/flexbox.css"/>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+ html {
+  scroll-behavior: smooth;
+}
+</style>
+    <title>Book Review Website</title>
+
+</head>
+    <div class="main wrapper">
+    <header>
+        <h2>Welcome to our Bookworm Haven</h2>
+    </header></div>
+    <div class="Top Nav">
+    <nav>
+        <ul>
+           <li style="font-weight: bolder;"><a href="./index.html">Home</a></li>
+           <li style="font-weight: bolder;"><a href="./books.html">Books</a></li>
+           <li style="font-weight: bolder;"><a href="./about.html">About Us</a></li>
+           <li style="font-weight: bolder;"><a href="./blogs.html">Blogs</a></li>
+           <li style="font-weight: bolder;"><a id="login" href="./login.html">Sign In</a></li>
+           <li style="font-weight: bolder;"><a id="logout" href="#" onclick="doLogout(event)">Sign Out</a></li>
+           <li style="font-weight: bolder;"><a class="login-sign" href="http://localhost:4000/register.html">Sign Up</a></li>
+        </ul>
+           
+    </nav>
+</div>
+<title>Books Display</title>
+
+</head>
+<body>
+<h2 style="text-align: center; color: brown;">Want to review books or read reviews? Please <a id="login" href="./login.html" style="color:blue">Sign In</a></h2>
+<div class="book-container">
+  <div class="book">
+    <img src="Images/EaglesOverBritain.jpg" alt="Book 1" >
+    <h3>Book Title 1</h3>
+    <p>Author: Author Name 1</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="book">
+    <img src="Images/Enidblyton.jpg" alt="Book 2" >
+    <h3>Book Title 2</h3>
+    <p>Author: Author Name 2</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  
+  <div class="book">
+    <img src="Images/prayers.jpg" alt="Book 3" >
+    <h3>Book Title 3</h3>
+    <p>Author: Author Name 1</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+ 
+  <div class="book">
+    <img src="Images/reurrectingHome.jpg" alt="Book 4" >
+    <h3>Book Title 4</h3>
+    <p>Author: Author Name 1</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="book">
+    <img src="Images/The secret life.jpg" alt="Book 1" >
+    <h3>Book Title 5</h3>
+    <p>Author: Author Name 1</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="book">
+    <img src="Images/crown.jpg" alt="Book 2" >
+    <h3>Book Title 6</h3>
+    <p>Author: Author Name 2</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  
+  <div class="book">
+    <img src="Images/hellobeautiful.jpg" alt="Book 3" >
+    <h3>Book Title 7</h3>
+    <p>Author: Author Name 1</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+ 
+  <div class="book">
+    <img src="Images/deankoontz.jpg" alt="Book 4" >
+    <h3>Book Title 8</h3>
+    <p>Author: Author Name 1</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="book">
+    <img src="Images/EaglesOverBritain.jpg" alt="Book 1" >
+    <h3>Book Title 9</h3>
+    <p>Author: Author Name 1</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <div class="book">
+    <img src="Images/escapinghome.jpg" alt="Book 2" >
+    <h3>Book Title 10</h3>
+    <p>Author: Author Name 2</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  
+  <div class="book">
+    <img src="Images/prayers.jpg" alt="Book 3" >
+    <h3>Book Title 11</h3>
+    <p>Author: Author Name 1</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+ 
+  <div class="book">
+    <img src="Images/crown.jpg" alt="Book 4" >
+    <h3>Book Title 12</h3>
+    <p>Author: Author Name 1</p>
+    <p>Description: Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+  <!-- Add more book divs as needed -->
+</div>
+<script src="./lib/api.config.js"></script>
+<script src="./lib/simple-storage.js"></script>
+<script src="./lib/service-helpers.js"></script>
+<script src="./lib/auth.serice.js"></script>
+<script src="./lib/auth.js"></script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+{
+  "name": "bookreviewblogsite",
+  "version": "1.0.0",
+  "description": "Bookworm Haven aims to create a vibrant online community for book lovers, offering many features to enhance their reading experience. Users will find detailed book reviews with summaries, critiques, and recommendations, complemented by a quick rating system for easy evaluation. Author spotlights featuring interviews and discussions will provide insights into writers' styles, while select books showcased on the homepage will grab attention. Reviews will be conveniently sorted by genre, and readers can engage through comments, fostering a sense of community. Curated book lists, movie adaptation comparisons, reading challenges, and personalized recommendations will provide diverse interests and inspire reading. Overall, Bookworm Haven will strive to be the go-to destination for book enthusiasts, fostering a lively and engaging community.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "body-parser": "^1.20.2",
+    "chai": "^5.1.0",
+    "cors": "^2.8.5",
+    "express": "^4.19.2",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0",
+    "mysql": "^2.18.1"
+  }
+}

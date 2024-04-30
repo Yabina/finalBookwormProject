@@ -1,0 +1,120 @@
+/* Reset default browser styles */
+* {
+    margin: 10px;
+    padding: 5px;
+  }
+/* .book-review-input {
+    margin: 10px;
+    padding: 5px;
+} */
+  
+  main {
+    min-height: 100%;
+    width: 100%;
+    margin-left: 5px;
+  } 
+  
+  header {
+    height: 50px;
+    width: 100%;
+    background-color: rgb(85, 51, 51);
+    color:#fff;
+    text-align: center;
+    
+  }
+
+
+  li {
+    padding: 0px 10px;
+    width: 600px;
+ 
+   
+  }
+  
+  ul, li {
+   list-style: none;
+   width: 600px;
+
+  }
+   
+  
+  h2 {
+    padding-bottom: 20px;
+  }
+  
+
+/* .book-review {
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 20px;
+    
+}
+
+.book-review h2 {
+    color:#000;
+    justify-content: center;
+}
+
+.book-review p {
+    margin-bottom: 10px;
+    color:#000;
+} */
+
+
+a:visited { color: rgb(214, 235, 252); display: inline-block;}
+a:link { 
+  color: #fff; 
+  display: inline-block;
+  justify-content: space-between; /* Distribute items evenly */
+  align-items: center; /* Vertically center items */
+}
+.btn btn-primary{
+  --bs-btn-color: var(--bs-brown);
+}
+
+button {
+    border: none;
+    cursor: pointer;
+    appearance: none;
+    background-color: rgb(85, 51, 51);
+    margin: 60px;
+    color: white;
+    padding: 8px 300px;
+    display: inline-block;
+    
+  }
+  .submit_review {
+    border-radius: 12px;
+    white-space: nowrap;
+  }
+/*  
+  .button-container {
+    display: flex;
+    justify-content: space-around; 
+     position: relative;
+    
+}  */
+
+/* .button img {
+    width: 300px; 
+    height: 300px; 
+    object-fit:cover; 
+    margin: -40px;
+    display: inline-block;
+}  */
+
+/* Three image containers (use 25% for four, and 50% for two, etc) */
+.column {
+  float:left;
+  width: 30%;
+  padding: 0px;
+  margin-right: 10%;
+}
+
+/* Clear floats after image containers */
+/* .row::after {
+  content: "";
+  clear: both;
+  display: table;
+} */

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<div lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="../css/styles.css" /> <!-- Link to CSS file -->
+        <link rel="stylesheet" href="../css/main.css" />
+        <link rel="stylesheet" href="../css/flexbox.css" />
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+            integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+            crossorigin="anonymous" />
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            html {
+                scroll-behavior: smooth;
+            }
+        </style>
+        <title>Book Review Website</title>
+
+    </head>
+    <div class="main wrapper">
+        <header>
+            <h1>Welcome to our Book Review Website</h1>
+        </header>
+    </div>
+    <div class="Top Nav">
+        <nav>
+            <ul>
+                <li style="font-weight: bolder;"><a href="../index.html">Home</a></li>
+                <li style="font-weight: bolder;"><a href="../books.html">Books</a></li>
+                <li style="font-weight: bolder;"><a href="../about.html">About Us</a></li>
+                <li style="font-weight: bolder;"><a href="../blogs.html">Blogs</a></li>
+                <li style="font-weight: bolder;"><a id="logout" href="#" onclick="doLogout(event)">Sign Out</a></li>
+            </ul>
+
+        </nav>
+    </div>
+
+    <body>
+        <main>
+            <section class="book-review">
+                <h1 style="font-weight: bolder; text-align: center; font-size: 100px; font-family: cursive; color:rgb(85, 51, 51)">Your Blogs</h1>
+                <br>
+                <div id="reviews-container" class = "container1"></div>
+                <div id="yourReviews"></div>
+
+                <div id="submitted-review"></div>
+
+            </section>
+<br>
+            <section class="book-review-input">
+                <h2 style="font-family: cursive; color:rgb(85, 51, 51)">Your Reviews Please!</h2>
+
+                <form id="book-review-form">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" id="formInputBookTitle" class="form-control" placeholder="Book Title"
+                                aria-label="Book Title" id="book-title" name="book-title" required>
+                        </div>
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Author Name" aria-label="Author Name"
+                                id="formInputAuthorName" name="author-name" required>
+                        </div>
+
+                    </div>
+                    <br>
+
+                    <div class="row">
+                        <div class="col">
+                            <textarea id="formInputDescription" class="form-control" placeholder="Review Description"
+                                aria-label="Review Description" name="description" rows="6" required></textarea>
+                        </div>
+                    </div>
+
+                    <br>
+                    <div class="row">
+                        <!-- <div class="col">
+        <input type="date"class="form-control" placeholder="Review Date" aria-label="Review Date" id="review-date" name="review-date" required>
+        </div> -->
+                        <div class="col">
+                            <input type="text" class="form-control" placeholder="Reviewed by" aria-label="Reviewed by"
+                                id="formInputReviewedBy" name="reviewed-by" required>
+                        </div>
+                        <div class="col">
+                            <input type="number" class="form-control" placeholder="Rating" aria-label="Rating"
+                                id="formInputRating" name="rating" min="0" max="5" required>
+                            <span class="heading">User Rating</span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star"></span>
+                        </div>
+                        <div class="col"><button type="submit" class="submit_review" onclick="doAddReview(event)" >Submit Review</button>
+                        </div>
+                    </div>
+                    <br>
+                </form>
+            </section>
+            <br>
+
+        </main>
+
+        <footer class="reviewfooter">
+            <div class="author">
+                <p>Author: <a href="https://github.com/Yabina/"> Yeabsira Desta</a></p>
+            </div>
+        </footer>
+
+        <script src="../lib/api.config.js"></script>
+        <script src="../lib/simple-storage.js"></script>
+        <script src="../lib/service-helpers.js"></script>
+        <script src="../lib/auth.serice.js"></script>
+        <script src="../lib/auth.js"></script>
+        <script src="../lib/auth.guard.js"></script>
+        <script src="./reviews-api.service.js"></script>
+        <script src="./review.service.js"></script>
+        <script src="./review.js"></script>
+        <script src="../app.js"></script>
+
+
+    </body>
+
+    </html>

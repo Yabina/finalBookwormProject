@@ -1,0 +1,62 @@
+html {
+    scroll-behavior: smooth;
+}
+  /* Footer styles */
+footer {
+    background-color: rgb(85, 51, 51);
+    color:white;
+    position: fixed;
+    padding: 1px 0px;
+    margin-top: auto;
+    width: 100%;
+    bottom: 0;
+  }
+.task-form {
+    margin: 50px 100px;
+  }
+.author {
+    margin-left: 24px;
+  }
+
+  .center {
+    /* display: flex;
+    flex-direction: column; */
+    /* justify-content: space-around; */
+    /* align-items: center; */
+    /* width: 200px; */
+    /* padding: 25px;
+    border-radius: 20px;
+    border: 1px solid #d3d3d3; */
+    position: relative; 
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); 
+  }
+
+  .list-group-item {
+    display: flex !important;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .list-group-item span {
+    width: 200px;
+  }
+  
+.section3 { 
+
+    margin-left: 70px;
+    margin-right: 70px;
+    text-align: center;
+    text-align: justify;
+}
+h3 {
+    margin-left: 70px;
+}
+ /* Container styles */
+#reviews-container {
+  /* border: 1px solid #ccc; 
+  padding: 20px;  */
+  width: 80%; /* Set width to 80% of the screen */
+  margin: 0 auto; /* Center the container */
+}

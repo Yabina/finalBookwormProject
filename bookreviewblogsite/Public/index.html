@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<div lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/styles.css"/> <!-- Link to CSS file -->
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/flexbox.css"/>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+ html {
+  scroll-behavior: smooth;
+}
+</style>
+    <title>Book Review Website</title>
+
+</head>
+    <div class="main wrapper">
+    <header>
+        <h2>Welcome to our Bookworm Haven</h2>
+    </header></div>
+    <div class="Top Nav">
+    <nav>
+      <ul>
+        <li style="font-weight: bolder;"><a href="./index.html">Home</a></li>
+        <li style="font-weight: bolder;"><a href="./books.html">Books</a></li>
+        <li style="font-weight: bolder;"><a href="./about.html">About Us</a></li>
+        <li style="font-weight: bolder;"><a href="./blogs.html">Blogs</a></li> 
+        <li style="font-weight: bolder;"><a id="login" href="./login.html">Sign In</a></li>
+        <li style="font-weight: bolder;"><a id="logout" href="#" onclick="doLogout(event)">Sign Out</a></li>
+        <li style="font-weight: bolder;"><a class="login-sign" href="http://localhost:4000/register.html">Sign Up</a></li>
+     </ul>
+           
+    </nav>
+</div>
+<body>
+    <main>
+        <section class="book-review">
+            
+            <div class="button-container">
+                <div class="row">
+                    <div class="column">
+                    <!-- <li><button class= "button img" type="submit"><img src="./Images/Blog.jpeg" alt="buttonimg" border="0" />Blog</button></li>
+                    <li><button class= "button img" type="submit"><img src="./Images/OpenBookImg.jpg" alt="buttonimg" border="0" />Reviews</button></li>
+                    <li><button class= "button img" type="submit"><img src="./Images/BooksImg.jpeg" alt="collections" border="0" />Latest Collections</button></li> -->
+                    <button class= "menu" type= "menu">
+                        <a href="./books.html" target="blank">
+                        <img src="./Images/Blog.jpeg" alt="buttonimg"  class="rounded" border="0" width="500" 
+                        height="400" /></a>
+                      </button> 
+                      
+                    </div>
+        
+                    <!-- <div class="column">
+                      <button class= "menu" type= "menu">
+                        <img src="./Images/OpenBookImg.jpg" alt="buttonimg" class="rounded" border="0" width="400" 
+                        height="300" />
+                      </button>
+                    </div> -->
+
+                    <div class="column">
+                      <button class= "menu" type= "menu">
+                        <a href="./blogs.html" target="blank">
+                        <img src="./Images/BooksImg.jpeg" alt="buttonimg"  class="rounded" border="0" width="500" 
+                        height="400" />
+                    </a>
+                      </button><br>
+                    
+                    </div>
+            </div>
+</div><br><br><br><br><br><br><br><br><br>
+        </section>
+        <section class="section3">
+        <div><p>Bookworm Haven aims to create a vibrant online community for book lovers, offering many features to enhance their reading experience. Users will find detailed book reviews with summaries, critiques, and recommendations, complemented by a quick rating system for easy evaluation. Author spotlights featuring interviews and discussions will provide insights into writers' styles, while select books showcased on the homepage will grab attention. Reviews will be conveniently sorted by genre, and readers can engage through comments, fostering a sense of community. Curated book lists, movie adaptation comparisons, reading challenges, and personalized recommendations will provide diverse interests and inspire reading. Overall, Bookworm Haven will strive to be the go-to destination for book enthusiasts, fostering a lively and engaging community.</p></div>
+</section>
+       <br> <br>
+    </main>
+
+    </div>
+
+<footer class="indexfooter">
+        <div class="author">
+          <p>Author: <a href="https://github.com/Yabina/"> Yeabsira Desta</a></p>
+        </div>
+</footer>
+
+    <script src="./lib/api.config.js"></script>
+    <script src="./lib/simple-storage.js"></script>
+    <script src="./lib/service-helpers.js"></script>
+    <script src="./lib/auth.serice.js"></script>
+    <script src="./lib/auth.js"></script>
+  
+</body>
+</html>

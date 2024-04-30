@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./css/styles.css"/> <!-- Link to CSS file -->
+    <link rel="stylesheet" href="./css/main.css"/>
+    <link rel="stylesheet" href="./css/flexbox.css"/>
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+ html {
+  scroll-behavior: smooth;
+}
+    </style>
+    <title>Book Review Website</title>
+
+</head>
+    <div class="main wrapper">
+    <header>
+        <h1>Welcome to our Book Review Website</h1>
+    </header></div>
+    <div class="Top Nav">
+    <nav>
+        <ul>
+          <li style="font-weight: bolder;"><a href="./index.html">Home</a></li>
+          <li style="font-weight: bolder;"><a href="./books.html">Books</a></li>
+          <li style="font-weight: bolder;"><a href="./about.html">About Us</a></li> 
+          <li style="font-weight: bolder;"><a href="./blogs.html">Blogs</a></li>
+          <li style="font-weight: bolder;"><a id="login" href="./login.html">Sign In</a></li>
+       </ul>
+    </nav>
+</div>
+
+  <body>
+    <div class="content">
+    <div class="register-container">
+      <h2>Register</h2>
+      <form id="register-form" class="register-form">
+        <input type="text" name="username" id="formInputUsernameReg"class="form-control" placeholder="Username" /><br />
+        <input type="email" name="email" class="form-control" id="formInputEmailReg" placeholder="Email" /><br />
+        <input type="password" name="password" id="formInputPasswordReg" class="form-control" placeholder="Password" /><br />
+        <button type="button" onclick="doRegister(event)">Sign Up</button>
+      </form>
+      <p class="login-text">Back to Login<a class="login-sign" href="http://localhost:4000/login.html">Login</a></p>
+    </div>
+</div>
+      <footer>
+        <p>Author: <a href="https://github.com/Yabina/">Yeabsira Desta</a></p>
+      </footer>
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./lib/api.config.js"></script>
+    <script src="./lib/simple-storage.js"></script>
+    <script src="./lib/service-helpers.js"></script>
+    <script src="./lib/auth.serice.js"></script>
+    <script src="./lib/auth.js"></script>
+  </body>
+</html>

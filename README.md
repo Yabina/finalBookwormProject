@@ -41,5 +41,4 @@ In today's digital age, book lovers often face the challenge of finding a one-st
 - npm install mysql
 - npm i cors
 - npm i chai
-+ Run the script at "nodemon ./src"
-+ Run the frontend too
++ Run the frontend and backend too
